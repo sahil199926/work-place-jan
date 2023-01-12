@@ -1,0 +1,28 @@
+.auth-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.auth-container h1{
+  font-size: clamp(36px, 4vw, 60px);
+}
+.auth-container h2{
+  font-size: clamp(24px, 2vw, 36px);
+}
+.auth-container button{
+  font-size: clamp(18px, 2vw, 24px);
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+  color: #000;
+  cursor: pointer;
+}
+.auth-container button:hover{
+  background-color: rgb(58, 141, 250);
+  color: #f5f5f5;
+  transition: all 0.3s ease;
+  font-size: clamp(24px, 2vw, 30px);
+}

@@ -1,0 +1,26 @@
+.container{
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container h1{
+  font-size: clamp(25px, 4.86vw, 70px);
+  max-width: 45%;
+  text-align: center;
+  margin: 0px auto ;
+}
+.container h1 span{
+  color: #4540DB;
+}
+.container h5{
+  font-size: clamp(15px, 2vw, 30px);
+  margin: 10px;
+}
+
+/* clamp */
+/* clamp(minval, ratio, maxval) */
+/* 25,4.8 vw,70 */
+/* (maxval/width of the design )X100 vw */
+/* 70/1440 X100 vs = */
