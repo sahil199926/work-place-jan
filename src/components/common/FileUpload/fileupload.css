@@ -1,0 +1,11 @@
+.input-cointainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  min-height: 200px;
+  align-items: center;
+  border: 1px solid #0000001f;
+  padding: 10px;
+  border-radius: 20px;
+  margin: 10px;
+}

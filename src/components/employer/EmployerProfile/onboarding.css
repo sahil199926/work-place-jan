@@ -1,0 +1,14 @@
+
+.onboarding-container{
+  background-color: #ffffff;
+    padding: 20px;
+    max-width: 90% !important;
+    margin: 20px auto !important;
+    border-radius: 20px;
+}
+.label{
+  font-size: 20px;
+    font-weight: bold;
+    margin: 10px 5px;
+    text-transform: capitalize;
+}

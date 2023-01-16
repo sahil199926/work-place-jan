@@ -1,0 +1,33 @@
+
+.onboarding-container{
+  background-color: #ffffff;
+    padding: 20px;
+    max-width: 90% !important;
+    margin: 20px auto !important;
+    border-radius: 20px;
+}
+.label{
+  font-size: 20px;
+    font-weight: bold;
+    margin: 10px 5px;
+    text-transform: capitalize;
+}
+.submit-btn{
+  width: 200px;
+    height: 50px;
+   float: right;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px auto;
+    display: block;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .submit-btn{
+    width: 100%;
+  }
+}
