@@ -1,0 +1,68 @@
+.sidebar-container{
+    background-color: #fff;
+    padding: 20px;
+    height: 100%;
+    overflow: auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+
+}
+.job-card{
+padding: 5px 10px;
+margin: 10px;
+cursor: pointer;
+}
+.selected-card{
+  background: #F2F2F2;
+border-radius: 10px 0px 0px 10px;
+border-left: 3px solid #7F31D2;
+width: 100%;
+
+
+
+}
+
+.job-last-edit{
+  font-weight: 500;
+font-size: clamp(9px, 1vw,  12px);
+line-height: 14px;
+margin: 5px 0px;
+color: #959595;
+}
+.job-card-title{
+  font-weight: 500;
+font-size: clamp(18px, 1.4vw,  22px);
+line-height: clamp(20px, 1.4vw,  26px);
+color: #000000;
+text-transform: capitalize;
+margin: 5px 0px;
+
+}
+.job-card-location{
+  font-weight: 500;
+font-size:clamp(12px, 1vw,  16px);
+line-height: 19px;
+color: #959595;
+margin: 5px 0px;
+}
+.post-btn{
+  background: rgba(69, 64, 219, 0.05);
+  border: 1.5px solid #4540DB;
+  /* height: 81px; */
+  font-weight: 600;
+font-size: clamp(20px, 1.8vw,  28px);
+line-height: 34px;
+  border-radius: 19px;
+  color: #4540DB;
+  padding: 20px;
+  width: 100%;
+  margin: 10px 0px;
+  cursor: pointer;
+}
+
+.post-btn :nth-child(2){
+  font-weight: 500;
+font-size: 15px;
+line-height: 18px;
+color: #8C8C8C;
+}

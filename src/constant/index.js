@@ -157,3 +157,104 @@ export const companySize = [
     value: "1000+",
   }
 ]
+export const jobType = [
+  {
+    label: "Full Time",
+    value: "Full Time",
+  },{
+    label: "Part Time",
+    value: "Part Time",
+  },
+  {
+    label: "Contract",
+    value: "Contract",
+  },
+  {
+    label: "Internship",
+    value: "Internship",
+  },
+  {
+    label: "Freelance",
+    value: "Freelance",
+  },
+  
+]
+export const jobLocation = [
+  {
+    label: "Bangalore",
+    value: "Bangalore",
+  },
+  {
+    label: "Mumbai",
+    value: "Mumbai",
+  },
+  {
+    label: "Delhi",
+    value: "Delhi",
+  },
+  {
+    label: "Hyderabad",
+    value: "Hyderabad",
+  },
+  {
+    label: "Chennai",
+    value: "Chennai",
+  },
+  {
+    label: "remote",
+    value: "remote",
+  }
+]
+export const currency = [
+  {
+    label: "INR",
+    value: "INR",
+  },
+  {
+    label: "USD",
+    value: "USD",
+  },
+  {
+    label: "EUR",
+    value: "EUR",
+  },
+  {
+    label: "GBP",
+    value: "GBP",
+  }
+]
+
+export const experience = [
+  {
+    label: "0-1",
+    value: "0-1",
+  },
+  {
+    label: "1-2",
+    value: "1-2",
+  },
+  {
+    label: "2-3",
+    value: "2-3",
+  },
+  {
+    label: "3-4",
+    value: "3-4",
+
+  },
+  {
+    label: "4-5",
+    value: "4-5",
+  },
+  {
+    label: "5-6",
+    value: "5-6",
+  },
+  {
+    label: "6-10",
+  },
+  {
+    label: "10+",
+    value: "10+",
+  }
+]

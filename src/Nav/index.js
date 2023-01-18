@@ -56,11 +56,12 @@ function Nav() {
         <Route path="/" element={<LandingPage />} />
         <Route path="/candidate/auth" element={<Auth type={"candidate"} />} />
         <Route path="/employer/auth" element={<Auth type={"employer"} />} />
-        <Route element={<CandidateProtectedRoutes />}>
-          <Route
+        <Route
             path="/candidate/onboarding"
             element={<CandidateOnboarding />}
           />
+        <Route element={<CandidateProtectedRoutes />}>
+          
           <Route path="/candidate/profile" element={<CandidateProfile />} />
           <Route path="/candidate/jobs" element={<CandidateJobs />} />
           <Route
@@ -71,9 +72,10 @@ function Nav() {
             path="/candidate/conversations"
             element={<CandidateConversations />}
           />
-        </Route>
+        </Route> 
+        <Route path="/employer/onboarding" element={<EmployerOnboarding />} />
         <Route element={<EmployerProtectedRoutes />}>
-          <Route path="/employer/onboarding" element={<EmployerOnboarding />} />
+         
           <Route path="/employer/profile" element={<EmployerProfile />} />
           <Route path="/employer/jobs" element={<EmployerJobs />} />
           <Route path="/employer/applicants" element={<EmployerApplicants />} />

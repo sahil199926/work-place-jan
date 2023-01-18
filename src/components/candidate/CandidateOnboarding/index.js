@@ -62,6 +62,7 @@ try{
 
       ...userData,
       userType: "candidate",
+      userId,
     });
     toastMessage({message:'Profile created successfully',type:'success'})
     navigate("/candidate/profile");

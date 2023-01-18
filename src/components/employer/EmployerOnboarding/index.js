@@ -47,6 +47,7 @@ try{
     await setDoc(doc(db, "userInfo", userId), {
       ...userData,
       userType: "employer",
+      userId,
     });
     toastMessage({message:'Profile created successfully',type:'success'})
     navigate("/employer/profile");
