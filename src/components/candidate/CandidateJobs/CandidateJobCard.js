@@ -1,7 +1,7 @@
 import { Grid } from "@mui/material";
 import React from "react";
 import "./candidatejob.css";
-function CandidateJobCard({ job }) {
+function CandidateJobCard({ job,applyJob}) {
   const {
     companyLogo,
     companyName,
@@ -55,7 +55,9 @@ function CandidateJobCard({ job }) {
           justifyContent: "flex-end",
         }}
         item xs={12} md={3}>
-          <button className="candidate-job-card__apply-btn">Apply</button>
+          <button
+          onClick={()=>applyJob(job)}
+          className="candidate-job-card__apply-btn">Apply</button>
         </Grid>
       </Grid>
     </div>
