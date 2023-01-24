@@ -27,7 +27,7 @@ function EmployerJobs() {
       </Grid>
       <Grid
         sx={{
-          border: "1px solid #000",
+         
           display: { xs: mobileFormView ? "block" : "none", sm: "block" },
         }}
         item

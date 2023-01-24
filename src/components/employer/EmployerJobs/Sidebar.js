@@ -30,6 +30,7 @@ function Sidebar({ setMobileFormView,selectedJob, setSelectedJob }) {
         alljobs.push(doc.data());
       });
       setAllJobs(alljobs);
+      setFilteredJobs(alljobs);
     });
     return () => unsubscribe();
 

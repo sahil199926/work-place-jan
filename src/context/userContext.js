@@ -18,6 +18,17 @@ const reducer = (state = initialState, action) => {
       };
       localStorage.setItem("user", JSON.stringify(data));
       return data;
+    case "UPDATE":
+      const newData = {
+        ...state,
+        userInfo:{
+          ...state.userInfo,
+          ...action.payload
+        }
+      };
+      localStorage.setItem("user", JSON.stringify(newData));
+      return newData;
+
     case "LOGOUT":
       localStorage.clear();
       return {

@@ -15,12 +15,12 @@ function CommonTable({ columns, data,onRowClick=null }) {
       <div>
         {data.map((row) => {
           return (
-            <div className="data-row-container">
+            <div className="data-row-container" style={{opacity:row['status']==="accepted"?'0.5':1}}>
               {columns.map((column) => {
                 if (column.type === "file") {
                   return (
                     <div style={{ ...(column.sx || {}) }}>
-                      <a href={row[column]} target="_blank" >
+                      <a href={row[column.dataKey]} target="_blank" >
                         View
                       </a>
                     </div>
@@ -36,9 +36,17 @@ function CommonTable({ columns, data,onRowClick=null }) {
                   return (
                     <div style={{ ...(column.sx || {}) }}>
                       <button
+                      style={{
+                        cursor:row['status']==="accepted"?'not-allowed':'pointer'
+                      }}
+                      disabled={row['status']==="accepted"}
                       onClick={()=>onRowClick(row,'reject')}
                       className="reject-btn">Reject</button>
                       <button
+                       style={{
+                        cursor:row['status']==="accepted"?'not-allowed':'pointer'
+                      }}
+                      disabled={row['status']==="accepted"}
                       onClick={()=>onRowClick(row,'accept')}
                       className="accept-btn">
                       Accept
